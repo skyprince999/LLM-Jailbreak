@@ -32,7 +32,7 @@ client = OpenAI(
 # 3) Read Prompts from Excel
 # ------------------------------------------------------------------------------
 # Expect an Excel column named "base64_prompt"
-df = pd.read_csv("F:/ML Commons data/ML Jailbreaks Security/LLM-Jailbreak/airr_official_1.0_practice_prompt_set_release.csv")
+df = pd.read_csv("prompt_text.csv")
 if "prompt_text" not in df.columns: #"base64_prompt"
     raise RuntimeError("prompts.xlsx must contain 'base64_prompt'/'prompt_text' column")
 
